@@ -5,58 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Saya</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar" data-aos="fade-down">
     <div class="logo">Portofolio Sari</div>
-    <nav class="nav-links">
+    <nav class="nav-links" data-aos="fade-left">
       <a href="#home">Home</a>
       <a href="#about">Tentang</a>
       <a href="#skills">Keahlian</a>
       <a href="#projects">Proyek</a>
       <a href="#contact">Kontak</a>
     </nav>
+    <button id="toggle-dark" title="Toggle Dark Mode">🌙</button>
   </header>
 
-  <section id="home" class="section">
-    <h1>Halo, saya Marian Sari</h1>
-    <p>I'm a Programmer</p>
+  <section id="home" class="section" data-aos="fade-up">
+    <h1 data-aos="fade-right">Halo, saya Marian Sari</h1>
+    <p data-aos="fade-left">I'm a Programmer</p>
   </section>
 
-  <section id="about" class="section">
-    <h2>Tentang Saya</h2>
-    <img src="images/marian.jpg.jpeg" alt="Foto Marian Sari" style="width: 180px; border-radius: 12px; margin: 1rem auto; display: block; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <p>Being a programmer is not just about building systems, but also about building the best version of myself.</p>
+  <section id="about" class="section" data-aos="fade-up">
+    <h2 data-aos="fade-right">Tentang Saya</h2>
+    <img src="images/marian.jpg.jpeg" alt="Foto Marian Sari" 
+         style="width: 180px; border-radius: 12px; margin: 1rem auto; display: block; box-shadow: 0 0 10px rgba(0,0,0,0.1);" 
+         data-aos="zoom-in">
+    <p data-aos="fade-up">Being a programmer is not just about building systems, but also about building the best version of myself.</p>
   </section>
 
-  <section id="skills" class="section">
-    <h2>Keahlian</h2>
-    <ul>
+  <section id="skills" class="section" data-aos="fade-up">
+    <h2 data-aos="fade-right">Keahlian</h2>
+    <ul data-aos="fade-left">
       <li>HTML, CSS, JavaScript</li>
       <li>Python, C++, Java</li>
       <li>Git & GitHub</li>
     </ul>
   </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <p>Ini adalah langkah awal saya sebagai programmer. Saya akan terus menambah proyek-proyek baru seiring saya belajar dan berkembang.</p>
-  
-    <ul>
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2 data-aos="fade-right">Projects</h2>
+    <p data-aos="fade-up">Ini adalah langkah awal saya sebagai programmer. Saya akan terus menambah proyek-proyek baru seiring saya belajar dan berkembang.</p>
+    <ul data-aos="fade-left">
       <li><strong>Personal Portfolio Website</strong> – Website ini adalah proyek pertama saya, dibuat dengan HTML, CSS, dan JavaScript.</li>
       <li><em>Coming Soon:</em> Mini App dengan JavaScript, e-book digital, dan tools untuk upgrade skill.</li>
     </ul>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Kontak Saya</h2>
-    <p>Email: sari@example.com</p>
-    <p>Instagram: @sari_portofolio</p>
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2 data-aos="fade-right">Kontak Saya</h2>
+    <p data-aos="fade-left">Email: <a href="mailto:marianmariansari@gmail.com">marianmariansari@gmail.com</a></p>
+    <p data-aos="fade-left" data-aos-delay="100">Instagram: <a href="https://instagram.com/digitalsha" target="_blank">@digitalsha</a></p>
   </section>
 
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Marian Sari. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>

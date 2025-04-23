@@ -1,9 +1,9 @@
-/* Gaya dasar */
+/* Mode Terang */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    background-color: #fff;
+    color: #222;
   }
   
   /* Navbar */
@@ -13,7 +13,6 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     background-color: #ffe4e1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,32 +28,73 @@ body {
     margin-left: 1rem;
     text-decoration: none;
     color: #4b0082;
-    font-weight: bold;
+    font-weight: 600;
   }
   
   .nav-links a:hover {
     color: #ff69b4;
   }
   
+  #toggle-dark {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #4b0082;
+  }
+  
   /* Section */
   .section {
     padding: 4rem 2rem;
     border-bottom: 1px solid #eee;
-    background-color: #ffffff;
   }
   
   h1, h2 {
-    color: #333;
+    color: #222;
   }
   
-  ul li {
-    margin-bottom: 0.5rem;
+  p, ul, li, a {
+    color: #333;
+    font-size: 1rem;
   }
   
   /* Footer */
   footer {
-    text-align: center;
     background-color: #ffe4e1;
+    text-align: center;
     padding: 1rem;
     color: #4b0082;
+  }
+  
+  /* DARK MODE */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+  
+  body.dark-mode .navbar,
+  body.dark-mode footer {
+    background-color: #2e003e;
+    color: #f5f5f5;
+  }
+  
+  body.dark-mode .logo,
+  body.dark-mode .nav-links a,
+  body.dark-mode footer {
+    color: #ffccff;
+  }
+  
+  body.dark-mode .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+  body.dark-mode #toggle-dark {
+    color: #ffccff;
+  }
+  
+  body.dark-mode p,
+  body.dark-mode ul,
+  body.dark-mode li,
+  body.dark-mode a {
+    color: #f0f0f0;
   }
